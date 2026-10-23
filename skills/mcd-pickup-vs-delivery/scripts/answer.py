@@ -34,10 +34,10 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from resolve_channels import resolve  # noqa: E402
 
-from mcd_delivery_xray.amap import enabled as amap_enabled  # noqa: E402
-from mcd_delivery_xray.geo import LatLng, haversine_m  # noqa: E402
-from mcd_delivery_xray.mcp_client import McpClient, McpError  # noqa: E402
-from mcd_delivery_xray.multimodal import (  # noqa: E402
+from mcd_pickup_vs_delivery.amap import enabled as amap_enabled  # noqa: E402
+from mcd_pickup_vs_delivery.geo import LatLng, haversine_m  # noqa: E402
+from mcd_pickup_vs_delivery.mcp_client import McpClient, McpError  # noqa: E402
+from mcd_pickup_vs_delivery.multimodal import (  # noqa: E402
     SHORT_TRIP_M, WALK_FIRST_M, estimate_legs, legs_from_amap,
 )
 
@@ -50,7 +50,7 @@ def _coords_for(store_code: str) -> tuple[float, float] | None:
     """门店坐标。来自仓库内快照，不额外调接口。"""
     if not _STORE_COORDS:
         try:
-            from mcd_delivery_xray.stores import load_stores
+            from mcd_pickup_vs_delivery.stores import load_stores
             for store in load_stores():
                 _STORE_COORDS[store.code] = (store.lat, store.lng)
         except Exception:
@@ -186,7 +186,7 @@ def collect(wants: list[str], at: LatLng | None, hourly_rate: float,
             legs = None
             if amap_enabled():
                 try:
-                    from mcd_delivery_xray.amap import AmapClient
+                    from mcd_pickup_vs_delivery.amap import AmapClient
                     legs = legs_from_amap(AmapClient(), origin, dest,
                                           address.get("city") or "")
                     entry["legs_source"] = "amap-duration+estimated-fare"

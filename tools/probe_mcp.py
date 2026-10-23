@@ -104,7 +104,7 @@ class McpClient:
             {
                 "protocolVersion": PROTOCOL_VERSION,
                 "capabilities": {},
-                "clientInfo": {"name": "mcd-delivery-xray-probe", "version": "0.1.0"},
+                "clientInfo": {"name": "mcd-pickup-vs-delivery-probe", "version": "0.1.0"},
             },
         )
         self._notify("notifications/initialized")

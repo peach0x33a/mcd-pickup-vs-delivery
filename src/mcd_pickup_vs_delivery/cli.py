@@ -1,8 +1,8 @@
-"""Command line entry point for mcd-delivery-xray.
+"""Command line entry point for mcd-pickup-vs-delivery.
 
-    python3 -m mcd_delivery_xray pickup --city 上海市 --at 31.2304,121.4737 --want 巨无霸
-    python3 -m mcd_delivery_xray price-map --city 上海市 --item 1100
-    python3 -m mcd_delivery_xray coverage --city 上海市 --radius 3000
+    python3 -m mcd_pickup_vs_delivery pickup --city 上海市 --at 31.2304,121.4737 --want 巨无霸
+    python3 -m mcd_pickup_vs_delivery price-map --city 上海市 --item 1100
+    python3 -m mcd_pickup_vs_delivery coverage --city 上海市 --radius 3000
 
 Every subcommand works offline from the committed snapshot. Commands that need
 a live MCP token say so explicitly and fail with a clear message instead of
@@ -676,7 +676,7 @@ def cmd_strategy(args: argparse.Namespace) -> int:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        prog="mcd-delivery-xray",
+        prog="mcd-pickup-vs-delivery",
         description="麦当劳门店价差与覆盖分析（只读，不下单）",
     )
     sub = parser.add_subparsers(dest="command", required=True)

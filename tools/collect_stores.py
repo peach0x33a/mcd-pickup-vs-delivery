@@ -26,7 +26,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "src"))
 
-from mcd_delivery_xray.mcp_client import McpClient, McpError  # noqa: E402
+from mcd_pickup_vs_delivery.mcp_client import McpClient, McpError  # noqa: E402
 
 OUTPUT = ROOT / "data" / "stores_raw.json"
 

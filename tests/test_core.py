@@ -15,15 +15,15 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "src"))
 
-from mcd_delivery_xray.density import NEIGHBOUR_RADIUS_M, analyse_city  # noqa: E402
-from mcd_delivery_xray.geo import (  # noqa: E402
+from mcd_pickup_vs_delivery.density import NEIGHBOUR_RADIUS_M, analyse_city  # noqa: E402
+from mcd_pickup_vs_delivery.geo import (  # noqa: E402
     LatLng,
     bounding_box,
     circle_overlap_ratio,
     coverage_fraction,
     haversine_m,
 )
-from mcd_delivery_xray.stores import Store, is_test_store, load_stores  # noqa: E402
+from mcd_pickup_vs_delivery.stores import Store, is_test_store, load_stores  # noqa: E402
 
 
 class GeometryTests(unittest.TestCase):
@@ -117,7 +117,7 @@ class NoWriteCapabilityTests(unittest.TestCase):
     """The project must never be able to place an order."""
 
     def test_forbidden_tool_names_rejected(self):
-        from mcd_delivery_xray.mcp_client import FORBIDDEN_FRAGMENTS, McpClient, McpError
+        from mcd_pickup_vs_delivery.mcp_client import FORBIDDEN_FRAGMENTS, McpClient, McpError
 
         for forbidden in ("create-order", "create-order", "draw-lottery",
                           "auto-bind-coupons", "cancel-order"):
@@ -141,7 +141,7 @@ class ValueModelTests(unittest.TestCase):
 
     def _row(self, pickup_fen, product_fen, delivery_fen, packing_fen,
              distance_m=1500, rate=30.0):
-        from mcd_delivery_xray.value import ChannelPrice, ItemComparison
+        from mcd_pickup_vs_delivery.value import ChannelPrice, ItemComparison
 
         return ItemComparison(
             name="测试餐品", code="X", store_code="S", store_name="测试店",
@@ -195,7 +195,7 @@ class StrategyTests(unittest.TestCase):
         self.assertLessEqual(product_price, 0)
 
     def test_best_bundle_respects_variety_cap(self):
-        from mcd_delivery_xray.strategy import ItemMarkup, best_bundle
+        from mcd_pickup_vs_delivery.strategy import ItemMarkup, best_bundle
 
         rows = [
             ItemMarkup(code="a", name="A", pickup_fen=1100, delivery_fen=1100, fixed_fen=680),
@@ -210,7 +210,7 @@ class StrategyTests(unittest.TestCase):
         self.assertLessEqual(spend, 10000)
 
     def test_markup_share_is_bounded(self):
-        from mcd_delivery_xray.strategy import ItemMarkup
+        from mcd_pickup_vs_delivery.strategy import ItemMarkup
 
         row = ItemMarkup(code="a", name="A", pickup_fen=1590,
                          delivery_fen=2700, fixed_fen=710)
@@ -306,7 +306,7 @@ class MultimodalTests(unittest.TestCase):
     """多出行方式比较：常见错误是表格和结论指向不同的行。"""
 
     def setUp(self):
-        from mcd_delivery_xray.multimodal import (
+        from mcd_pickup_vs_delivery.multimodal import (
             best_mode, compare_with_delivery, estimate_legs,
         )
 
@@ -368,7 +368,7 @@ class MultimodalTests(unittest.TestCase):
                 f"{distance}m: 推荐 {pick.mode} 不是可见候选中最便宜的")
 
     def test_taxi_fare_is_monotonic(self):
-        from mcd_delivery_xray.multimodal import _taxi_fare
+        from mcd_pickup_vs_delivery.multimodal import _taxi_fare
 
         fares = [_taxi_fare(d) for d in (1000, 3000, 6000, 12000)]
         self.assertEqual(fares, sorted(fares))

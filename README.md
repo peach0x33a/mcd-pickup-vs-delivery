@@ -32,7 +32,7 @@
 
 ```bash
 git clone <this-repo>
-cd mcd-delivery-xray
+cd mcd-pickup-vs-delivery
 echo "MCD_MCP_TOKEN=你的token" > .env     # .env 已 gitignore
 ```
 
@@ -245,13 +245,13 @@ python3 -m unittest discover -s tests -v
 ## 项目结构
 
 ```
-mcd-delivery-xray/
+mcd-pickup-vs-delivery/
 ├── skills/mcd-pickup-vs-delivery/
 │   ├── SKILL.md                    Skill 定义：触发条件、工作流、判断指引
 │   └── scripts/
 │       ├── answer.py               输出两条渠道的硬数据（JSON）
 │       └── resolve_channels.py     解析两条渠道的商品编码
-├── src/mcd_delivery_xray/
+├── src/mcd_pickup_vs_delivery/
 │   ├── mcp_client.py               极简只读 MCP 客户端
 │   ├── multimodal.py               五种出行方式的时间与成本
 │   ├── geo.py                      球面距离、圆重叠、网格采样
@@ -298,10 +298,10 @@ mcd-delivery-xray/
 复现命令（全部离线可跑，基于仓库内快照）：
 
 ```bash
-python3 -m mcd_delivery_xray delivery     # 渠道差价明细
-python3 -m mcd_delivery_xray strategy     # 固定费如何随件数摊薄
-python3 -m mcd_delivery_xray density      # 全国门店密度
-python3 -m mcd_delivery_xray price-tiers  # 同城不同门店的价格档位
+python3 -m mcd_pickup_vs_delivery delivery     # 渠道差价明细
+python3 -m mcd_pickup_vs_delivery strategy     # 固定费如何随件数摊薄
+python3 -m mcd_pickup_vs_delivery density      # 全国门店密度
+python3 -m mcd_pickup_vs_delivery price-tiers  # 同城不同门店的价格档位
 ```
 
 ### A1. 同一个商品，两条渠道编码不同

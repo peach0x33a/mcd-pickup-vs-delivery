@@ -1,4 +1,4 @@
-# MCP 集成说明 · mcd-delivery-xray
+# MCP 集成说明 · mcd-pickup-vs-delivery
 
 本项目实际使用的麦当劳 MCP Server、Tool、调用流程与业务价值。
 

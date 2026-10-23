@@ -3,14 +3,14 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "mcd-delivery-xray"
+name = "mcd-pickup-vs-delivery"
 version = "0.1.0"
-description = "麦当劳门店价差与覆盖分析：同一份麦当劳，走 200 米能便宜多少"
+description = "麦当劳自提 vs 外送：同一份餐的两条渠道实付拆解与出行成本对比"
 requires-python = ">=3.9"
 dependencies = []
 
 [project.scripts]
-mcdx = "mcd_delivery_xray.cli:main"
+mcdx = "mcd_pickup_vs_delivery.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

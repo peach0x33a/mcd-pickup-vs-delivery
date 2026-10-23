@@ -20,10 +20,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "src"))
 
-from mcd_delivery_xray.geo import LatLng  # noqa: E402
-from mcd_delivery_xray.mcp_client import McpClient, McpError  # noqa: E402
-from mcd_delivery_xray.menu import extract_meals, fetch_menu, menu_cache_path, save_menu  # noqa: E402
-from mcd_delivery_xray.stores import by_city, load_stores, nearest_stores  # noqa: E402
+from mcd_pickup_vs_delivery.geo import LatLng  # noqa: E402
+from mcd_pickup_vs_delivery.mcp_client import McpClient, McpError  # noqa: E402
+from mcd_pickup_vs_delivery.menu import extract_meals, fetch_menu, menu_cache_path, save_menu  # noqa: E402
+from mcd_pickup_vs_delivery.stores import by_city, load_stores, nearest_stores  # noqa: E402
 
 REQUEST_PAUSE_S = 0.15
 

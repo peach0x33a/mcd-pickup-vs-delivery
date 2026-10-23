@@ -27,7 +27,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent.parent.parent
 sys.path.insert(0, str(ROOT / "src"))
 
-from mcd_delivery_xray.mcp_client import McpClient, McpError  # noqa: E402
+from mcd_pickup_vs_delivery.mcp_client import McpClient, McpError  # noqa: E402
 
 #: 外送渠道编码相对自提编码的常见前缀。
 DELIVERY_PREFIX = "90"

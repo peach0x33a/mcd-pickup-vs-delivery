@@ -81,7 +81,7 @@ class AmapClient:
         query["key"] = self.key
         base = AMAP_BASE if version == 3 else f"https://restapi.amap.com/v{version}"
         url = f"{base}/{path}?{urllib.parse.urlencode(query)}"
-        request = urllib.request.Request(url, headers={"User-Agent": "mcd-delivery-xray/0.1"})
+        request = urllib.request.Request(url, headers={"User-Agent": "mcd-pickup-vs-delivery/0.1"})
         try:
             with urllib.request.urlopen(request, timeout=self.timeout) as response:
                 payload = json.loads(response.read().decode("utf-8", "replace"))
