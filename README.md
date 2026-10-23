@@ -51,8 +51,8 @@ python3 skills/mcd-pickup-vs-delivery/scripts/answer.py \
   打车             12分     18.73       5.88      24.61
 ```
 
-**注意：输出里没有「推荐」。** 同一个 ¥9.10 的差价，赶时间的上班族该叫外送，
-时间不值钱的学生该骑车去拿——情境脚本拿不到，只有对话中的 AI 知道。
+**注意：输出里没有「推荐」。** 该不该叫外送取决于用户的情境——赶不赶时间、
+时间值多少钱、天气如何，这些脚本拿不到，只有对话中的 AI 知道。
 判断指引写在 `skills/mcd-pickup-vs-delivery/SKILL.md`，可直接挂到
 WorkBuddy / Claude Code / Cursor 等支持 Skill 的 Agent。
 
