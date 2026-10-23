@@ -6,3 +6,5 @@ __pycache__/
 .pytest_cache/
 node_modules/
 data/private/
+.DS_Store
+.workbuddy/
