@@ -372,3 +372,94 @@ class MultimodalTests(unittest.TestCase):
 
         fares = [_taxi_fare(d) for d in (1000, 3000, 6000, 12000)]
         self.assertEqual(fares, sorted(fares))
+
+
+def _tokens(text: str):
+    """把文本切成候选片段：连续中文、连续数字、以及整串去空白。
+
+    只保留 2-30 长度，避免组合爆炸，同时足以覆盖姓名、地址、ID。
+    """
+    import re
+
+    for match in re.finditer(r"[\u4e00-\u9fff]{2,30}", text):
+        yield match.group(0)
+    for match in re.finditer(r"\d{6,40}", text):
+        yield match.group(0)
+
+
+class NoPersonalDataTests(unittest.TestCase):
+    """仓库会公开，绝不能包含可识别个人的信息。
+
+    这条测试是一次真实事故之后加的：开发时把采集到的真实收货地址、
+    收件人姓名和地址簿 ID 原样提交进了仓库，并且已经推送。
+    整个 git 历史被迫重写。所以这里对「所有会进版本库的数据文件」做体检。
+    """
+
+    #: 本次事故中泄漏过的真实值的 SHA-256 前 16 位。
+    #: 这里刻意只存哈希、不存明文：测试文件本身也会进版本库，
+    #: 若把真实地址/姓名写进测试，就等于换个地方重新泄漏一遍。
+    KNOWN_LEAK_HASHES = {
+        "3ccf16af4b608f13": "收件人姓名",
+        "45a22bfb38ab0fde": "地址簿 ID",
+        "5036237ad369a6a6": "街道门牌",
+        "021ecd7da465f23b": "学校名称",
+    }
+
+    def _data_files(self):
+        from pathlib import Path
+
+        root = Path(__file__).resolve().parent.parent / "data"
+        if not root.exists():
+            return []
+        return [p for p in root.rglob("*") if p.is_file() and p.suffix in (".json", ".md")]
+
+    def test_known_pii_absent_from_data_files(self):
+        """仓库里不能出现这些值的明文。
+
+        做法：把所有 data 文件的内容切成候选片段，逐个取哈希，
+        与已知泄漏值的哈希比对。这样测试文件本身不必写出真实地址或姓名，
+        否则就成了换个地方重新泄漏。
+        """
+        import hashlib
+
+        known = self.KNOWN_LEAK_HASHES
+        for path in self._data_files():
+            text = path.read_text(encoding="utf-8", errors="ignore")
+            for token in _tokens(text):
+                digest = hashlib.sha256(token.encode()).hexdigest()[:16]
+                if digest in known:
+                    self.fail(
+                        f"{path} 仍包含个人信息明文（{known[digest]}）")
+
+    def test_channel_snapshots_are_redacted(self):
+        """渠道快照里的地址必须是脱敏形态。"""
+        import json
+        from pathlib import Path
+
+        channels = Path(__file__).resolve().parent.parent / "data" / "channels"
+        for path in channels.glob("*.json"):
+            payload = json.loads(path.read_text(encoding="utf-8"))
+            address = payload.get("address") or {}
+            self.assertTrue(address.get("redacted"), f"{path} 的地址未标记脱敏")
+            self.assertNotIn("contactName", address, f"{path} 仍含收件人姓名")
+            self.assertNotIn("fullAddress", address, f"{path} 仍含完整地址")
+
+    def test_channel_address_is_city_level_only(self):
+        """快照里的地址最多到区县级，不应出现街道门牌。"""
+        import json
+        from pathlib import Path
+
+        channels = Path(__file__).resolve().parent.parent / "data" / "channels"
+        for path in channels.glob("*.json"):
+            address = (json.loads(path.read_text(encoding="utf-8")).get("address") or {})
+            label = address.get("cityLabel") or ""
+            self.assertNotRegex(
+                label, r"\d+号", f"{path} 的 cityLabel 含门牌号: {label}")
+
+    def test_no_phone_numbers_in_data(self):
+        import re
+        for path in self._data_files():
+            text = path.read_text(encoding="utf-8", errors="ignore")
+            # 门店数据里不会有手机号；出现 11 位手机号形态即视为泄漏
+            hits = re.findall(r"(?<!\d)1[3-9]\d{9}(?!\d)", text)
+            self.assertEqual(hits, [], f"{path} 含疑似手机号: {hits[:3]}")

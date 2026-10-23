@@ -1,0 +1,1970 @@
+{
+ "address": {
+  "addressIdHash": "45a22bfb38ab",
+  "cityLabel": "山东省淄博市张店区（已脱敏）",
+  "redacted": true
+ },
+ "captured_at": "2026-10-23T13:15:01",
+ "note": "示例数据。原始采集中的收货地址、联系人、地址 ID 已全部脱敏，仅保留商品与价格数据用于演示。",
+ "stores": [
+  {
+   "storeCode": "3350233",
+   "storeName": "麦当劳淄博福园餐厅",
+   "beCode": "335023302",
+   "menu_pickup_count": 107,
+   "menu_delivery_count": 118,
+   "common_count": 19,
+   "menu": {
+    "521986": {
+     "name": "马苏里拉拉丝芝士条",
+     "price": 11.0
+    },
+    "507328": {
+     "name": "麦咖啡™奶铁",
+     "price": 13.9
+    },
+    "521750": {
+     "name": "泷盐星星麦旋风",
+     "price": 16.0
+    },
+    "521914": {
+     "name": "“葱不求人“按摩捶痒痒挠",
+     "price": 14.9
+    },
+    "521917": {
+     "name": "泷愿成真麦旋风——大米风味",
+     "price": 16.0
+    },
+    "507394": {
+     "name": "牛奶",
+     "price": 19.0
+    },
+    "521156": {
+     "name": "那么大鸡排（椒盐风味）",
+     "price": 14.0
+    },
+    "510488": {
+     "name": "燕麦奶",
+     "price": 21.0
+    },
+    "521950": {
+     "name": "蓝莓爆爆珠麦旋风",
+     "price": 16.0
+    },
+    "9900015726": {
+     "name": "韩式甜辣酱鸡块8块",
+     "price": 19.9
+    },
+    "521952": {
+     "name": "龙焰鸡腿堡",
+     "price": 15.9
+    },
+    "521953": {
+     "name": "龙焰芝士棒鸡腿堡",
+     "price": 27.5
+    },
+    "521316": {
+     "name": "高达吉士双牛堡",
+     "price": 22.5
+    },
+    "9900016058": {
+     "name": "鱼排堡开心乐园餐",
+     "price": 24.0
+    },
+    "9900016056": {
+     "name": "麦乐鸡开心乐园餐",
+     "price": 25.0
+    },
+    "9900016057": {
+     "name": "汉堡开心乐园餐",
+     "price": 23.5
+    },
+    "515955": {
+     "name": "浓浓燕麦黑巧（冰/热）",
+     "price": 15.9
+    },
+    "521817": {
+     "name": "【美汁源】“多汁柠柠”",
+     "price": 12.0
+    },
+    "515946": {
+     "name": "浓浓黑巧（冰/热）",
+     "price": 13.9
+    }
+   },
+   "quotes": {
+    "521952": {
+     "pickup": {
+      "productOriginalPrice": 2450,
+      "productPrice": 1590,
+      "originalPrice": 2450,
+      "discount": 860,
+      "price": 1590,
+      "productList": [
+       {
+        "productCode": "521952",
+        "productName": "龙焰鸡腿堡",
+        "quantity": 1,
+        "originalSubtotal": 2450,
+        "subtotal": 1590
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "take-in-store",
+        "title": "外带",
+        "subtitle": "店内自提"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 2700,
+      "productPrice": 2700,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 110,
+      "packingPrice": 110,
+      "originalPrice": 3410,
+      "discount": 0,
+      "price": 3410,
+      "productList": [
+       {
+        "productCode": "521952",
+        "productName": "龙焰鸡腿堡",
+        "quantity": 1,
+        "originalSubtotal": 2700,
+        "subtotal": 2700
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 11,
+        "originalSubtotal": 110,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "521316": {
+     "pickup": {
+      "productOriginalPrice": 2250,
+      "productPrice": 2250,
+      "originalPrice": 2250,
+      "discount": 0,
+      "price": 2250,
+      "productList": [
+       {
+        "productCode": "521316",
+        "productName": "高达吉士双牛堡",
+        "quantity": 1,
+        "originalSubtotal": 2250,
+        "subtotal": 2250
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "take-in-store",
+        "title": "外带",
+        "subtitle": "店内自提"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 2600,
+      "productPrice": 2600,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 110,
+      "packingPrice": 110,
+      "originalPrice": 3310,
+      "discount": 0,
+      "price": 3310,
+      "productList": [
+       {
+        "productCode": "521316",
+        "productName": "高达吉士双牛堡",
+        "quantity": 1,
+        "originalSubtotal": 2600,
+        "subtotal": 2600
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 11,
+        "originalSubtotal": 110,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "521953": {
+     "pickup": {
+      "productOriginalPrice": 2750,
+      "productPrice": 2750,
+      "originalPrice": 2750,
+      "discount": 0,
+      "price": 2750,
+      "productList": [
+       {
+        "productCode": "521953",
+        "productName": "龙焰芝士棒鸡腿堡",
+        "quantity": 1,
+        "originalSubtotal": 2750,
+        "subtotal": 2750
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "take-in-store",
+        "title": "外带",
+        "subtitle": "店内自提"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 3000,
+      "productPrice": 3000,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 110,
+      "packingPrice": 110,
+      "originalPrice": 3710,
+      "discount": 0,
+      "price": 3710,
+      "productList": [
+       {
+        "productCode": "521953",
+        "productName": "龙焰芝士棒鸡腿堡",
+        "quantity": 1,
+        "originalSubtotal": 3000,
+        "subtotal": 3000
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 11,
+        "originalSubtotal": 110,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "521156": {
+     "pickup": {
+      "productOriginalPrice": 1400,
+      "productPrice": 1400,
+      "originalPrice": 1400,
+      "discount": 0,
+      "price": 1400,
+      "productList": [
+       {
+        "productCode": "521156",
+        "productName": "那么大鸡排（椒盐风味）",
+        "quantity": 1,
+        "originalSubtotal": 1400,
+        "subtotal": 1400
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "take-in-store",
+        "title": "外带",
+        "subtitle": "店内自提"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 1550,
+      "productPrice": 1550,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 80,
+      "packingPrice": 80,
+      "originalPrice": 2230,
+      "discount": 0,
+      "price": 2230,
+      "productList": [
+       {
+        "productCode": "521156",
+        "productName": "那么大鸡排（椒盐风味）",
+        "quantity": 1,
+        "originalSubtotal": 1550,
+        "subtotal": 1550
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 8,
+        "originalSubtotal": 80,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "9900016056": {
+     "pickup": {
+      "productOriginalPrice": 2500,
+      "productPrice": 2500,
+      "originalPrice": 2500,
+      "discount": 0,
+      "price": 2500,
+      "productList": [
+       {
+        "productCode": "9900016056",
+        "productName": "麦乐鸡开心乐园餐",
+        "quantity": 1,
+        "originalSubtotal": 2500,
+        "subtotal": 2500
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "take-in-store",
+        "title": "外带",
+        "subtitle": "店内自提"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 2650,
+      "productPrice": 2650,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 190,
+      "packingPrice": 190,
+      "originalPrice": 3440,
+      "discount": 0,
+      "price": 3440,
+      "productList": [
+       {
+        "productCode": "9900016056",
+        "productName": "麦乐鸡开心乐园餐",
+        "quantity": 1,
+        "originalSubtotal": 2650,
+        "subtotal": 2650
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 19,
+        "originalSubtotal": 190,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "9900016058": {
+     "pickup": {
+      "productOriginalPrice": 2400,
+      "productPrice": 2400,
+      "originalPrice": 2400,
+      "discount": 0,
+      "price": 2400,
+      "productList": [
+       {
+        "productCode": "9900016058",
+        "productName": "鱼排堡开心乐园餐",
+        "quantity": 1,
+        "originalSubtotal": 2400,
+        "subtotal": 2400
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "take-in-store",
+        "title": "外带",
+        "subtitle": "店内自提"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 2550,
+      "productPrice": 2550,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 190,
+      "packingPrice": 190,
+      "originalPrice": 3340,
+      "discount": 0,
+      "price": 3340,
+      "productList": [
+       {
+        "productCode": "9900016058",
+        "productName": "鱼排堡开心乐园餐",
+        "quantity": 1,
+        "originalSubtotal": 2550,
+        "subtotal": 2550
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 19,
+        "originalSubtotal": 190,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "9900016057": {
+     "pickup": {
+      "productOriginalPrice": 2350,
+      "productPrice": 2350,
+      "originalPrice": 2350,
+      "discount": 0,
+      "price": 2350,
+      "productList": [
+       {
+        "productCode": "9900016057",
+        "productName": "汉堡开心乐园餐",
+        "quantity": 1,
+        "originalSubtotal": 2350,
+        "subtotal": 2350
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "take-in-store",
+        "title": "外带",
+        "subtitle": "店内自提"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 2500,
+      "productPrice": 2500,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 190,
+      "packingPrice": 190,
+      "originalPrice": 3290,
+      "discount": 0,
+      "price": 3290,
+      "productList": [
+       {
+        "productCode": "9900016057",
+        "productName": "汉堡开心乐园餐",
+        "quantity": 1,
+        "originalSubtotal": 2500,
+        "subtotal": 2500
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 19,
+        "originalSubtotal": 190,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "521950": {
+     "pickup": {
+      "productOriginalPrice": 1600,
+      "productPrice": 1600,
+      "originalPrice": 1600,
+      "discount": 0,
+      "price": 1600,
+      "productList": [
+       {
+        "productCode": "521950",
+        "productName": "蓝莓爆爆珠麦旋风",
+        "quantity": 1,
+        "originalSubtotal": 1600,
+        "subtotal": 1600
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "take-in-store",
+        "title": "外带",
+        "subtitle": "店内自提"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 1700,
+      "productPrice": 1700,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 80,
+      "packingPrice": 80,
+      "originalPrice": 2380,
+      "discount": 0,
+      "price": 2380,
+      "productList": [
+       {
+        "productCode": "521950",
+        "productName": "蓝莓爆爆珠麦旋风",
+        "quantity": 1,
+        "originalSubtotal": 1700,
+        "subtotal": 1700
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 8,
+        "originalSubtotal": 80,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "521750": {
+     "pickup": {
+      "productOriginalPrice": 1600,
+      "productPrice": 1600,
+      "originalPrice": 1600,
+      "discount": 0,
+      "price": 1600,
+      "productList": [
+       {
+        "productCode": "521750",
+        "productName": "泷盐星星麦旋风",
+        "quantity": 1,
+        "originalSubtotal": 1600,
+        "subtotal": 1600
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "take-in-store",
+        "title": "外带",
+        "subtitle": "店内自提"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 1700,
+      "productPrice": 1700,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 80,
+      "packingPrice": 80,
+      "originalPrice": 2380,
+      "discount": 0,
+      "price": 2380,
+      "productList": [
+       {
+        "productCode": "521750",
+        "productName": "泷盐星星麦旋风",
+        "quantity": 1,
+        "originalSubtotal": 1700,
+        "subtotal": 1700
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 8,
+        "originalSubtotal": 80,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "521817": {
+     "pickup": {
+      "productOriginalPrice": 1200,
+      "productPrice": 1200,
+      "originalPrice": 1200,
+      "discount": 0,
+      "price": 1200,
+      "productList": [
+       {
+        "productCode": "521817",
+        "productName": "【美汁源】“多汁柠柠”",
+        "quantity": 1,
+        "originalSubtotal": 1200,
+        "subtotal": 1200
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "take-in-store",
+        "title": "外带",
+        "subtitle": "店内自提"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 1300,
+      "productPrice": 1300,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "originalPrice": 1900,
+      "discount": 0,
+      "price": 1900,
+      "productList": [
+       {
+        "productCode": "521817",
+        "productName": "【美汁源】“多汁柠柠”",
+        "quantity": 1,
+        "originalSubtotal": 1300,
+        "subtotal": 1300
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "storeCode": "3350339",
+   "storeName": "麦当劳淄博吾悦餐厅",
+   "beCode": "335033902",
+   "menu_pickup_count": 115,
+   "menu_delivery_count": 125,
+   "common_count": 26,
+   "menu": {
+    "521986": {
+     "name": "马苏里拉拉丝芝士条",
+     "price": 11.0
+    },
+    "521750": {
+     "name": "泷盐星星麦旋风",
+     "price": 16.0
+    },
+    "521871": {
+     "name": "美禄可可雪冰",
+     "price": 9.9
+    },
+    "521914": {
+     "name": "“葱不求人“按摩捶痒痒挠",
+     "price": 14.9
+    },
+    "521915": {
+     "name": "冰糖葫芦酸奶风味派",
+     "price": 5.0
+    },
+    "521917": {
+     "name": "泷愿成真麦旋风——大米风味",
+     "price": 16.0
+    },
+    "521881": {
+     "name": "马来咖喱风味薄皮肉骨鸡3块",
+     "price": 15.5
+    },
+    "507394": {
+     "name": "牛奶",
+     "price": 19.0
+    },
+    "520361": {
+     "name": "奶铁雪冰",
+     "price": 23.0
+    },
+    "9900016082": {
+     "name": "心形薯饼5块",
+     "price": 15.5
+    },
+    "521946": {
+     "name": "旋旋星愿贴",
+     "price": 3.9
+    },
+    "521156": {
+     "name": "那么大鸡排（椒盐风味）",
+     "price": 14.0
+    },
+    "510488": {
+     "name": "燕麦奶",
+     "price": 21.0
+    },
+    "521950": {
+     "name": "蓝莓爆爆珠麦旋风",
+     "price": 16.0
+    },
+    "521797": {
+     "name": "北美招牌牧场酱",
+     "price": 3.0
+    },
+    "521952": {
+     "name": "龙焰鸡腿堡",
+     "price": 15.9
+    },
+    "521953": {
+     "name": "龙焰芝士棒鸡腿堡",
+     "price": 27.5
+    },
+    "521799": {
+     "name": "日式鲜磨山葵酱",
+     "price": 3.0
+    },
+    "521316": {
+     "name": "高达吉士双牛堡",
+     "price": 22.5
+    },
+    "521929": {
+     "name": "旋旋水手帽",
+     "price": 48.8
+    },
+    "9900016058": {
+     "name": "鱼排堡开心乐园餐",
+     "price": 24.0
+    },
+    "9900016057": {
+     "name": "汉堡开心乐园餐",
+     "price": 23.5
+    },
+    "515955": {
+     "name": "浓浓燕麦黑巧（冰/热）",
+     "price": 15.9
+    },
+    "521817": {
+     "name": "【美汁源】“多汁柠柠”",
+     "price": 12.0
+    },
+    "515949": {
+     "name": "浓浓黑巧雪冰",
+     "price": 23.0
+    },
+    "515946": {
+     "name": "浓浓黑巧（冰/热）",
+     "price": 13.9
+    }
+   },
+   "quotes": {
+    "521952": {
+     "pickup": {
+      "productOriginalPrice": 2450,
+      "productPrice": 1590,
+      "originalPrice": 2450,
+      "discount": 860,
+      "price": 1590,
+      "productList": [
+       {
+        "productCode": "521952",
+        "productName": "龙焰鸡腿堡",
+        "quantity": 1,
+        "originalSubtotal": 2450,
+        "subtotal": 1590
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "locker-in",
+        "title": "外带",
+        "subtitle": "店内取餐柜"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 2700,
+      "productPrice": 2700,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 110,
+      "packingPrice": 110,
+      "originalPrice": 3410,
+      "discount": 0,
+      "price": 3410,
+      "productList": [
+       {
+        "productCode": "521952",
+        "productName": "龙焰鸡腿堡",
+        "quantity": 1,
+        "originalSubtotal": 2700,
+        "subtotal": 2700
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 11,
+        "originalSubtotal": 110,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "521316": {
+     "pickup": {
+      "productOriginalPrice": 2250,
+      "productPrice": 2250,
+      "originalPrice": 2250,
+      "discount": 0,
+      "price": 2250,
+      "productList": [
+       {
+        "productCode": "521316",
+        "productName": "高达吉士双牛堡",
+        "quantity": 1,
+        "originalSubtotal": 2250,
+        "subtotal": 2250
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "locker-in",
+        "title": "外带",
+        "subtitle": "店内取餐柜"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 2600,
+      "productPrice": 2600,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 110,
+      "packingPrice": 110,
+      "originalPrice": 3310,
+      "discount": 0,
+      "price": 3310,
+      "productList": [
+       {
+        "productCode": "521316",
+        "productName": "高达吉士双牛堡",
+        "quantity": 1,
+        "originalSubtotal": 2600,
+        "subtotal": 2600
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 11,
+        "originalSubtotal": 110,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "521953": {
+     "pickup": {
+      "productOriginalPrice": 2750,
+      "productPrice": 2750,
+      "originalPrice": 2750,
+      "discount": 0,
+      "price": 2750,
+      "productList": [
+       {
+        "productCode": "521953",
+        "productName": "龙焰芝士棒鸡腿堡",
+        "quantity": 1,
+        "originalSubtotal": 2750,
+        "subtotal": 2750
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "locker-in",
+        "title": "外带",
+        "subtitle": "店内取餐柜"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 3000,
+      "productPrice": 3000,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 110,
+      "packingPrice": 110,
+      "originalPrice": 3710,
+      "discount": 0,
+      "price": 3710,
+      "productList": [
+       {
+        "productCode": "521953",
+        "productName": "龙焰芝士棒鸡腿堡",
+        "quantity": 1,
+        "originalSubtotal": 3000,
+        "subtotal": 3000
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 11,
+        "originalSubtotal": 110,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "521156": {
+     "pickup": {
+      "productOriginalPrice": 1400,
+      "productPrice": 1400,
+      "originalPrice": 1400,
+      "discount": 0,
+      "price": 1400,
+      "productList": [
+       {
+        "productCode": "521156",
+        "productName": "那么大鸡排（椒盐风味）",
+        "quantity": 1,
+        "originalSubtotal": 1400,
+        "subtotal": 1400
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "locker-in",
+        "title": "外带",
+        "subtitle": "店内取餐柜"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 1550,
+      "productPrice": 1550,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 80,
+      "packingPrice": 80,
+      "originalPrice": 2230,
+      "discount": 0,
+      "price": 2230,
+      "productList": [
+       {
+        "productCode": "521156",
+        "productName": "那么大鸡排（椒盐风味）",
+        "quantity": 1,
+        "originalSubtotal": 1550,
+        "subtotal": 1550
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 8,
+        "originalSubtotal": 80,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "9900016058": {
+     "pickup": {
+      "productOriginalPrice": 2400,
+      "productPrice": 2400,
+      "originalPrice": 2400,
+      "discount": 0,
+      "price": 2400,
+      "productList": [
+       {
+        "productCode": "9900016058",
+        "productName": "鱼排堡开心乐园餐",
+        "quantity": 1,
+        "originalSubtotal": 2400,
+        "subtotal": 2400
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "locker-in",
+        "title": "外带",
+        "subtitle": "店内取餐柜"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 2550,
+      "productPrice": 2550,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 190,
+      "packingPrice": 190,
+      "originalPrice": 3340,
+      "discount": 0,
+      "price": 3340,
+      "productList": [
+       {
+        "productCode": "9900016058",
+        "productName": "鱼排堡开心乐园餐",
+        "quantity": 1,
+        "originalSubtotal": 2550,
+        "subtotal": 2550
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 19,
+        "originalSubtotal": 190,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "9900016057": {
+     "pickup": {
+      "productOriginalPrice": 2350,
+      "productPrice": 2350,
+      "originalPrice": 2350,
+      "discount": 0,
+      "price": 2350,
+      "productList": [
+       {
+        "productCode": "9900016057",
+        "productName": "汉堡开心乐园餐",
+        "quantity": 1,
+        "originalSubtotal": 2350,
+        "subtotal": 2350
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "locker-in",
+        "title": "外带",
+        "subtitle": "店内取餐柜"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 2500,
+      "productPrice": 2500,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 190,
+      "packingPrice": 190,
+      "originalPrice": 3290,
+      "discount": 0,
+      "price": 3290,
+      "productList": [
+       {
+        "productCode": "9900016057",
+        "productName": "汉堡开心乐园餐",
+        "quantity": 1,
+        "originalSubtotal": 2500,
+        "subtotal": 2500
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 19,
+        "originalSubtotal": 190,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "521950": {
+     "pickup": {
+      "productOriginalPrice": 1600,
+      "productPrice": 1600,
+      "originalPrice": 1600,
+      "discount": 0,
+      "price": 1600,
+      "productList": [
+       {
+        "productCode": "521950",
+        "productName": "蓝莓爆爆珠麦旋风",
+        "quantity": 1,
+        "originalSubtotal": 1600,
+        "subtotal": 1600
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "locker-in",
+        "title": "外带",
+        "subtitle": "店内取餐柜"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 1700,
+      "productPrice": 1700,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 80,
+      "packingPrice": 80,
+      "originalPrice": 2380,
+      "discount": 0,
+      "price": 2380,
+      "productList": [
+       {
+        "productCode": "521950",
+        "productName": "蓝莓爆爆珠麦旋风",
+        "quantity": 1,
+        "originalSubtotal": 1700,
+        "subtotal": 1700
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 8,
+        "originalSubtotal": 80,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "521750": {
+     "pickup": {
+      "productOriginalPrice": 1600,
+      "productPrice": 1600,
+      "originalPrice": 1600,
+      "discount": 0,
+      "price": 1600,
+      "productList": [
+       {
+        "productCode": "521750",
+        "productName": "泷盐星星麦旋风",
+        "quantity": 1,
+        "originalSubtotal": 1600,
+        "subtotal": 1600
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "locker-in",
+        "title": "外带",
+        "subtitle": "店内取餐柜"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 1700,
+      "productPrice": 1700,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 80,
+      "packingPrice": 80,
+      "originalPrice": 2380,
+      "discount": 0,
+      "price": 2380,
+      "productList": [
+       {
+        "productCode": "521750",
+        "productName": "泷盐星星麦旋风",
+        "quantity": 1,
+        "originalSubtotal": 1700,
+        "subtotal": 1700
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 8,
+        "originalSubtotal": 80,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "9900016082": {
+     "pickup": {
+      "productOriginalPrice": 1550,
+      "productPrice": 1550,
+      "originalPrice": 1550,
+      "discount": 0,
+      "price": 1550,
+      "productList": [
+       {
+        "productCode": "9900016082",
+        "productName": "心形薯饼5块",
+        "quantity": 1,
+        "originalSubtotal": 1550,
+        "subtotal": 1550
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "locker-in",
+        "title": "外带",
+        "subtitle": "店内取餐柜"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 1650,
+      "productPrice": 1650,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 80,
+      "packingPrice": 80,
+      "originalPrice": 2330,
+      "discount": 0,
+      "price": 2330,
+      "productList": [
+       {
+        "productCode": "9900016082",
+        "productName": "心形薯饼5块",
+        "quantity": 1,
+        "originalSubtotal": 1650,
+        "subtotal": 1650
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 8,
+        "originalSubtotal": 80,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "521817": {
+     "pickup": {
+      "productOriginalPrice": 1200,
+      "productPrice": 1200,
+      "originalPrice": 1200,
+      "discount": 0,
+      "price": 1200,
+      "productList": [
+       {
+        "productCode": "521817",
+        "productName": "【美汁源】“多汁柠柠”",
+        "quantity": 1,
+        "originalSubtotal": 1200,
+        "subtotal": 1200
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "locker-in",
+        "title": "外带",
+        "subtitle": "店内取餐柜"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 1300,
+      "productPrice": 1300,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "originalPrice": 1900,
+      "discount": 0,
+      "price": 1900,
+      "productList": [
+       {
+        "productCode": "521817",
+        "productName": "【美汁源】“多汁柠柠”",
+        "quantity": 1,
+        "originalSubtotal": 1300,
+        "subtotal": 1300
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "storeCode": "3350326",
+   "storeName": "麦当劳淄博奥朗特IS餐厅",
+   "beCode": "335032602",
+   "menu_pickup_count": 100,
+   "menu_delivery_count": 113,
+   "common_count": 15,
+   "menu": {
+    "521750": {
+     "name": "泷盐星星麦旋风",
+     "price": 16.0
+    },
+    "521914": {
+     "name": "“葱不求人“按摩捶痒痒挠",
+     "price": 14.9
+    },
+    "521915": {
+     "name": "冰糖葫芦酸奶风味派",
+     "price": 5.0
+    },
+    "521917": {
+     "name": "泷愿成真麦旋风——大米风味",
+     "price": 16.0
+    },
+    "521966": {
+     "name": "韩式烟熏芝士风味酱",
+     "price": 3.0
+    },
+    "521156": {
+     "name": "那么大鸡排（椒盐风味）",
+     "price": 14.0
+    },
+    "521950": {
+     "name": "蓝莓爆爆珠麦旋风",
+     "price": 16.0
+    },
+    "9900015726": {
+     "name": "韩式甜辣酱鸡块8块",
+     "price": 19.9
+    },
+    "521952": {
+     "name": "龙焰鸡腿堡",
+     "price": 15.9
+    },
+    "521316": {
+     "name": "高达吉士双牛堡",
+     "price": 22.5
+    },
+    "521922": {
+     "name": "奶香大米派",
+     "price": 9.5
+    },
+    "9900016058": {
+     "name": "鱼排堡开心乐园餐",
+     "price": 24.0
+    },
+    "9900016056": {
+     "name": "麦乐鸡开心乐园餐",
+     "price": 25.0
+    },
+    "9900016057": {
+     "name": "汉堡开心乐园餐",
+     "price": 23.5
+    },
+    "521817": {
+     "name": "【美汁源】“多汁柠柠”",
+     "price": 12.0
+    }
+   },
+   "quotes": {
+    "521952": {
+     "pickup": {
+      "productOriginalPrice": 2400,
+      "productPrice": 1590,
+      "originalPrice": 2400,
+      "discount": 810,
+      "price": 1590,
+      "productList": [
+       {
+        "productCode": "521952",
+        "productName": "龙焰鸡腿堡",
+        "quantity": 1,
+        "originalSubtotal": 2400,
+        "subtotal": 1590
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "locker-out",
+        "title": "外带",
+        "subtitle": "店外取餐柜"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 2700,
+      "productPrice": 2700,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 110,
+      "packingPrice": 110,
+      "originalPrice": 3410,
+      "discount": 0,
+      "price": 3410,
+      "productList": [
+       {
+        "productCode": "521952",
+        "productName": "龙焰鸡腿堡",
+        "quantity": 1,
+        "originalSubtotal": 2700,
+        "subtotal": 2700
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 11,
+        "originalSubtotal": 110,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "521316": {
+     "pickup": {
+      "productOriginalPrice": 2250,
+      "productPrice": 2250,
+      "originalPrice": 2250,
+      "discount": 0,
+      "price": 2250,
+      "productList": [
+       {
+        "productCode": "521316",
+        "productName": "高达吉士双牛堡",
+        "quantity": 1,
+        "originalSubtotal": 2250,
+        "subtotal": 2250
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "locker-out",
+        "title": "外带",
+        "subtitle": "店外取餐柜"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 2600,
+      "productPrice": 2600,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 110,
+      "packingPrice": 110,
+      "originalPrice": 3310,
+      "discount": 0,
+      "price": 3310,
+      "productList": [
+       {
+        "productCode": "521316",
+        "productName": "高达吉士双牛堡",
+        "quantity": 1,
+        "originalSubtotal": 2600,
+        "subtotal": 2600
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 11,
+        "originalSubtotal": 110,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "9900016056": {
+     "pickup": {
+      "productOriginalPrice": 2500,
+      "productPrice": 2500,
+      "originalPrice": 2500,
+      "discount": 0,
+      "price": 2500,
+      "productList": [
+       {
+        "productCode": "9900016056",
+        "productName": "麦乐鸡开心乐园餐",
+        "quantity": 1,
+        "originalSubtotal": 2500,
+        "subtotal": 2500
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "locker-out",
+        "title": "外带",
+        "subtitle": "店外取餐柜"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 2650,
+      "productPrice": 2650,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 190,
+      "packingPrice": 190,
+      "originalPrice": 3440,
+      "discount": 0,
+      "price": 3440,
+      "productList": [
+       {
+        "productCode": "9900016056",
+        "productName": "麦乐鸡开心乐园餐",
+        "quantity": 1,
+        "originalSubtotal": 2650,
+        "subtotal": 2650
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 19,
+        "originalSubtotal": 190,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "9900016058": {
+     "pickup": {
+      "productOriginalPrice": 2400,
+      "productPrice": 2400,
+      "originalPrice": 2400,
+      "discount": 0,
+      "price": 2400,
+      "productList": [
+       {
+        "productCode": "9900016058",
+        "productName": "鱼排堡开心乐园餐",
+        "quantity": 1,
+        "originalSubtotal": 2400,
+        "subtotal": 2400
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "locker-out",
+        "title": "外带",
+        "subtitle": "店外取餐柜"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 2550,
+      "productPrice": 2550,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 190,
+      "packingPrice": 190,
+      "originalPrice": 3340,
+      "discount": 0,
+      "price": 3340,
+      "productList": [
+       {
+        "productCode": "9900016058",
+        "productName": "鱼排堡开心乐园餐",
+        "quantity": 1,
+        "originalSubtotal": 2550,
+        "subtotal": 2550
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 19,
+        "originalSubtotal": 190,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "9900016057": {
+     "pickup": {
+      "productOriginalPrice": 2350,
+      "productPrice": 2350,
+      "originalPrice": 2350,
+      "discount": 0,
+      "price": 2350,
+      "productList": [
+       {
+        "productCode": "9900016057",
+        "productName": "汉堡开心乐园餐",
+        "quantity": 1,
+        "originalSubtotal": 2350,
+        "subtotal": 2350
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "locker-out",
+        "title": "外带",
+        "subtitle": "店外取餐柜"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 2500,
+      "productPrice": 2500,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 190,
+      "packingPrice": 190,
+      "originalPrice": 3290,
+      "discount": 0,
+      "price": 3290,
+      "productList": [
+       {
+        "productCode": "9900016057",
+        "productName": "汉堡开心乐园餐",
+        "quantity": 1,
+        "originalSubtotal": 2500,
+        "subtotal": 2500
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 19,
+        "originalSubtotal": 190,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "521156": {
+     "pickup": {
+      "productOriginalPrice": 1400,
+      "productPrice": 1400,
+      "originalPrice": 1400,
+      "discount": 0,
+      "price": 1400,
+      "productList": [
+       {
+        "productCode": "521156",
+        "productName": "那么大鸡排（椒盐风味）",
+        "quantity": 1,
+        "originalSubtotal": 1400,
+        "subtotal": 1400
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "locker-out",
+        "title": "外带",
+        "subtitle": "店外取餐柜"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 1550,
+      "productPrice": 1550,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 80,
+      "packingPrice": 80,
+      "originalPrice": 2230,
+      "discount": 0,
+      "price": 2230,
+      "productList": [
+       {
+        "productCode": "521156",
+        "productName": "那么大鸡排（椒盐风味）",
+        "quantity": 1,
+        "originalSubtotal": 1550,
+        "subtotal": 1550
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 8,
+        "originalSubtotal": 80,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "521917": {
+     "pickup": {
+      "productOriginalPrice": 1600,
+      "productPrice": 1600,
+      "originalPrice": 1600,
+      "discount": 0,
+      "price": 1600,
+      "productList": [
+       {
+        "productCode": "521917",
+        "productName": "泷愿成真麦旋风——大米风味",
+        "quantity": 1,
+        "originalSubtotal": 1600,
+        "subtotal": 1600
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "locker-out",
+        "title": "外带",
+        "subtitle": "店外取餐柜"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 1700,
+      "productPrice": 1700,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 80,
+      "packingPrice": 80,
+      "originalPrice": 2380,
+      "discount": 0,
+      "price": 2380,
+      "productList": [
+       {
+        "productCode": "521917",
+        "productName": "泷愿成真麦旋风——大米风味",
+        "quantity": 1,
+        "originalSubtotal": 1700,
+        "subtotal": 1700
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 8,
+        "originalSubtotal": 80,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "521950": {
+     "pickup": {
+      "productOriginalPrice": 1600,
+      "productPrice": 1600,
+      "originalPrice": 1600,
+      "discount": 0,
+      "price": 1600,
+      "productList": [
+       {
+        "productCode": "521950",
+        "productName": "蓝莓爆爆珠麦旋风",
+        "quantity": 1,
+        "originalSubtotal": 1600,
+        "subtotal": 1600
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "locker-out",
+        "title": "外带",
+        "subtitle": "店外取餐柜"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 1700,
+      "productPrice": 1700,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 80,
+      "packingPrice": 80,
+      "originalPrice": 2380,
+      "discount": 0,
+      "price": 2380,
+      "productList": [
+       {
+        "productCode": "521950",
+        "productName": "蓝莓爆爆珠麦旋风",
+        "quantity": 1,
+        "originalSubtotal": 1700,
+        "subtotal": 1700
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 8,
+        "originalSubtotal": 80,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "521750": {
+     "pickup": {
+      "productOriginalPrice": 1600,
+      "productPrice": 1600,
+      "originalPrice": 1600,
+      "discount": 0,
+      "price": 1600,
+      "productList": [
+       {
+        "productCode": "521750",
+        "productName": "泷盐星星麦旋风",
+        "quantity": 1,
+        "originalSubtotal": 1600,
+        "subtotal": 1600
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "locker-out",
+        "title": "外带",
+        "subtitle": "店外取餐柜"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 1700,
+      "productPrice": 1700,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "packingOriginalPrice": 80,
+      "packingPrice": 80,
+      "originalPrice": 2380,
+      "discount": 0,
+      "price": 2380,
+      "productList": [
+       {
+        "productCode": "521750",
+        "productName": "泷盐星星麦旋风",
+        "quantity": 1,
+        "originalSubtotal": 1700,
+        "subtotal": 1700
+       },
+       {
+        "productCode": "920174",
+        "productName": "打包服务费",
+        "quantity": 8,
+        "originalSubtotal": 80,
+        "subtotal": 0
+       }
+      ]
+     }
+    },
+    "521817": {
+     "pickup": {
+      "productOriginalPrice": 1200,
+      "productPrice": 1200,
+      "originalPrice": 1200,
+      "discount": 0,
+      "price": 1200,
+      "productList": [
+       {
+        "productCode": "521817",
+        "productName": "【美汁源】“多汁柠柠”",
+        "quantity": 1,
+        "originalSubtotal": 1200,
+        "subtotal": 1200
+       }
+      ],
+      "takeWayList": [
+       {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+       },
+       {
+        "code": "locker-out",
+        "title": "外带",
+        "subtitle": "店外取餐柜"
+       }
+      ]
+     },
+     "delivery": {
+      "productOriginalPrice": 1300,
+      "productPrice": 1300,
+      "deliveryOriginalPrice": 600,
+      "deliveryPrice": 600,
+      "originalPrice": 1900,
+      "discount": 0,
+      "price": 1900,
+      "productList": [
+       {
+        "productCode": "521817",
+        "productName": "【美汁源】“多汁柠柠”",
+        "quantity": 1,
+        "originalSubtotal": 1300,
+        "subtotal": 1300
+       }
+      ]
+     }
+    }
+   }
+  }
+ ]
+}

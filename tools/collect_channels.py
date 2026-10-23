@@ -7,7 +7,7 @@ READ-ONLY: calls `delivery-query-addresses`, `delivery-query-stores`,
 What gets written to `data/channels/<slug>.json`:
 
     {
-      "address":      {addressId, fullAddress, city, lat, lng},
+      "address":      {city_label, redacted_note},   # 不含任何可识别个人的信息
       "captured_at":  "...",
       "stores": [
         {storeCode, storeName, beCode, menu: {...},
@@ -26,6 +26,8 @@ from __future__ import annotations
 
 import argparse
 import datetime
+import hashlib
+import re
 import json
 import sys
 import time
@@ -44,6 +46,14 @@ REQUEST_PAUSE_S = 0.15
 #: needs, so we quote the items with the biggest list-price divergence plus a
 #: spread of typical ones.
 MAX_ITEMS_PER_STORE = 14
+
+
+def _city_only(full_address: str) -> str:
+    """把完整地址裁剪到「省+市+区」级别，去掉街道门牌与任何可定位信息。"""
+    match = re.match(r"(.{2,8}?(?:省|自治区|市))(.{2,10}?(?:市|区|县))?", full_address)
+    if not match:
+        return "（已脱敏）"
+    return "".join(part for part in match.groups() if part) + "（已脱敏）"
 
 
 def _meals(client: McpClient, store_code: str, order_type: int, be_type: int, be_code: str = "") -> dict:
@@ -85,14 +95,17 @@ def collect(slug: str, max_items: int) -> dict:
 
     stores = client.call("delivery-query-stores",
                          {"addressId": address["addressId"], "beType": 2}).get("data") or []
-    print(f"地址：{address.get('fullAddress')}")
+    print(f"地址：{_city_only(address.get('fullAddress') or '')}")
     print(f"可配送门店：{len(stores)} 家\n")
 
     out = {
+        # 脱敏落盘：地址簿 ID 只存哈希、地址只保留到城市级、联系人一律不写入。
+        # 这三项都是个人信息，比赛要求「不包含他人个人信息」，仓库是要公开的。
         "address": {
-            "addressId": address.get("addressId"),
-            "fullAddress": address.get("fullAddress"),
-            "contactName": address.get("contactName"),
+            "addressIdHash": hashlib.sha256(
+                str(address.get("addressId") or "").encode()).hexdigest()[:12],
+            "cityLabel": _city_only(address.get("fullAddress") or ""),
+            "redacted": True,
         },
         "captured_at": datetime.datetime.now().isoformat(timespec="seconds"),
         "stores": [],
