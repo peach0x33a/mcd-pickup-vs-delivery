@@ -6,7 +6,7 @@
 
 > 同一份麦当劳，自提和外送是两个价——差价藏在商品溢价、配送费、包装费里。
 > 这个 Skill 用官方接口把两条渠道的实付算出来、拆清楚，再算上「自己去拿一趟要花多少时间和路费」，
-> 把硬数据交给 AI，由它结合你的情境给出建议。
+> 把这些数字交给 AI，由它结合你的情境给出建议。
 
 麦当劳程序员创意开发大赛参赛作品 · 基于 [麦当劳中国 MCP](https://github.com/M-China/mcd-mcp-server) · 非官方产品。
 **只读：不下单、不领券、不抽奖、不写地址簿。** MCP 调用细节见 [MCP_INTEGRATION.md](MCP_INTEGRATION.md)。
@@ -20,7 +20,7 @@
 - 有些商品外送渠道根本不卖；同一个商品，两条渠道用不同编码
 
 而「该不该叫外送」没有标准答案——取决于你离店多远、时间值多少钱、外面下没下雨。
-所以脚本不替你做决定：**它只给可靠的数字，判断交给懂情境的 AI**。
+所以脚本不替你做决定：**它只把数字算准，判断交给懂情境的 AI**。
 
 ## 三分钟跑起来
 
@@ -39,7 +39,10 @@ python3 skills/mcd-pickup-vs-delivery/scripts/answer.py \
 
   自提实付   ¥23.00
   外送实付   ¥32.10
-  差额       ¥9.10（商品溢价 ¥2.00 + 配送费 ¥6.00 + 包装费 ¥1.10）
+  差额       ¥9.10
+    商品溢价 ¥2.00
+    配送费   ¥6.00
+    包装费   ¥1.10
 
   距店 5291 米，各方式成本：
   方式              耗时      出行费      时间成本       合计
@@ -56,12 +59,12 @@ python3 skills/mcd-pickup-vs-delivery/scripts/answer.py \
 判断指引写在 `skills/mcd-pickup-vs-delivery/SKILL.md`，可直接挂到
 WorkBuddy / Claude Code / Cursor 等支持 Skill 的 Agent。
 
-默认输出 JSON 供 AI 消费；辅助脚本 `resolve_channels.py` 解析两条渠道的商品编码
+默认输出 JSON 给 AI 用；辅助脚本 `resolve_channels.py` 解析两条渠道的商品编码
 对应关系（如自提 `1100` ↔ 外送 `901100`）。
 
 ## 工程要点
 
-- **金额只认 `calculate-price`**（整数「分」，官方权威）。菜单里的 `currentPrice` 是
+- **金额只认 `calculate-price`**（官方接口返回整数「分」）。菜单里的 `currentPrice` 是
   「元」字符串，两者单位混用会让价差 100 倍
 - **数据带自校验**：`gap.reconciles` 为 `false` 时说明拆解对不上总差额，
   AI 不应把这份数据给用户看

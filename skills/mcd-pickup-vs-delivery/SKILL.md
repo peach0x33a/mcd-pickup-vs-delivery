@@ -16,7 +16,7 @@ agent_created: true
 - 有些商品**外送渠道根本不卖**
 
 这些差异叠加起来，用户很难判断「这单到底该不该叫外送」。
-本 Skill 把这笔账一次算清楚：脚本负责给出可靠的数据，你负责结合用户情境给出结论。
+本 Skill 把这笔账一次算清楚：脚本负责把数据算准，你负责结合用户情境给出结论。
 
 ## 何时使用
 
@@ -45,7 +45,7 @@ python3 skills/mcd-pickup-vs-delivery/scripts/answer.py \
   --hourly-rate 30
 ```
 
-默认输出 JSON。加 `--format text` 输出人类可读表格（调试用）。
+默认输出 JSON。加 `--format text` 输出表格给人看（调试用）。
 
 | 参数 | 含义 | 默认 |
 |---|---|---|
@@ -96,29 +96,8 @@ python3 skills/mcd-pickup-vs-delivery/scripts/answer.py \
 
 **这是本 Skill 最重要的设计约定。**
 
-脚本 `answer.py` **不做推荐、不下结论**。它只输出结构化的硬数据：
-
-```json
-{
-  "pickup":   {"total_fen": 4750, "product_fen": 4750, "delivery_fen": 0,  "packing_fen": 0},
-  "delivery": {"total_fen": 6020, "product_fen": 5200, "delivery_fen": 600, "packing_fen": 220},
-  "gap": {
-    "total_fen": 1270,
-    "product_markup_fen": 450,
-    "delivery_fee_fen": 600,
-    "packing_fee_fen": 220,
-    "reconciles": true
-  },
-  "distance_m": 5291,
-  "legs": [
-    {"mode": "walk",    "minutes": 70.5, "fare_yuan": 0.00,  "time_cost_yuan": 35.27, "total_cost_yuan": 35.27},
-    {"mode": "bike",    "minutes": 21.2, "fare_yuan": 1.50,  "time_cost_yuan": 10.58, "total_cost_yuan": 12.08},
-    {"mode": "transit", "minutes": 13.2, "fare_yuan": 2.00,  "time_cost_yuan": 6.61,  "total_cost_yuan": 8.61},
-    {"mode": "drive",   "minutes": 10.6, "fare_yuan": 8.17,  "time_cost_yuan": 5.29,  "total_cost_yuan": 13.47},
-    {"mode": "taxi",    "minutes": 11.8, "fare_yuan": 18.73, "time_cost_yuan": 5.88,  "total_cost_yuan": 24.61}
-  ]
-}
-```
+脚本 `answer.py` **不做推荐、不下结论**。它只输出结构化数据：两条渠道的实付拆解、
+五种出行方式的成本、数据可信度标记。字段样例见上一节。
 
 **为什么这样设计**：同一个 ¥12.70 的差价，对不同用户该给不同建议——
 
@@ -165,7 +144,7 @@ python3 skills/mcd-pickup-vs-delivery/scripts/answer.py \
 默认 ¥30/小时。如果用户说"我时间不值钱"，把 `--hourly-rate` 调到 5；
 如果说"我时薪很高"，调高。**时薪变了，结论会翻转**，这是合理的。
 
-### 5. 数据可信度字段要尊重
+### 5. 可信度字段怎么用
 
 | 字段 | 含义 | 你怎么用 |
 |---|---|---|
@@ -187,7 +166,7 @@ python3 skills/mcd-pickup-vs-delivery/scripts/answer.py \
 | 可配送门店 | `delivery-query-stores` |
 | 两条渠道菜单 | `query-meals`（orderType 1 / 2） |
 | **编码对应关系** | `resolve_channels.py`（按名字 + 前缀兜底） |
-| **实付金额** | `calculate-price`（唯一权威，单位「分」） |
+| **实付金额** | `calculate-price`（金额以它为准，单位「分」） |
 
 **四条硬纪律：**
 
